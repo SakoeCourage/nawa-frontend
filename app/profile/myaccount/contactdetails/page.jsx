@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Primarybutton from '@/components/form/Primarybutton'
 import InputTextStatus from '@/components/form/InputTextStatus'

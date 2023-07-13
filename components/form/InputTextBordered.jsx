@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 function InputTextBordered({className,placeholder,label,type,value,onChange,error}) {

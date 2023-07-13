@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Listings from './Listings'
 import Image from 'next/image'

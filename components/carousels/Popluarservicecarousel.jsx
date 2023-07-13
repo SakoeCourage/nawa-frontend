@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { scroller } from 'react-scroll'
 import ScrollIndicator from './ScrollIndicator'
@@ -69,10 +69,10 @@ function Servicecard({ banner, name, inscription, active }) {
 
 function Popluarservicecarousel() {
     const [currentIndex, setCurrentIndex] = useState(1)
-  
+
 
     return (
-        <Horizontalcarousel className='py-4 min-h-[40vh]' getCurrentIndex={(i)=>setCurrentIndex(i)}>
+        <Horizontalcarousel className='py-4 min-h-[40vh]' getCurrentIndex={(i) => setCurrentIndex(i)}>
             {services.map((service, i) => <Servicecard key={i} active={Number(i + 1) === Number(currentIndex)} inscription={service.inscription} banner={service.banner} name={service.name} />)}
         </Horizontalcarousel>
     )

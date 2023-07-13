@@ -1,3 +1,4 @@
+"use client"
 export default function handleValidation(schema, formData) {
     let validationErrors = {}
     return new Promise((resolve, reject) => {
