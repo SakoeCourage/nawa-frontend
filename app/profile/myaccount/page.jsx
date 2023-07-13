@@ -1,7 +1,6 @@
 import React from 'react'
 import paremeterlist from './paremeterlist'
 import Link from 'next/link'
-import { useSession } from 'next-auth/react'
 
 function Paremetercard({ icon, title, caption,link }) {
     return <Link as={<a/>} href={link && link} className=' shadow-md rounded-md flex flex-col gap-8 bg-primary-desktop-color p-3 py-4 border border-t-[#4E54FE] border-l-[6px] border-l-[#4E54FE]'>

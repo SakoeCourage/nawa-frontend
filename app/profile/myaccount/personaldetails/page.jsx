@@ -26,10 +26,7 @@ import { object, string, number, date } from 'yup';
     const handleSubmit = ()=>post('/user/update',{
         onSucess: ()=> {alert('done')}
     })
-    // useEffect(() => {
-    //   console.log(data)
-    // }, [data])
-
+ 
     
     return (
         <div className=' max-w-5xl mx-auto py-4 text-sm'>

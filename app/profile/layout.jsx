@@ -1,8 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
 import Navcomponent from './Navcomponent'
-
-
 
 function layout({ children }) {
 

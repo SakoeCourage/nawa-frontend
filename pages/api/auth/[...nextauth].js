@@ -1,8 +1,6 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
-import { addOrUpdateUrlParam } from "@/app/utils";
-import Api from "@/api/api";
-import Cookies from "js-cookie";
+
 export const authOptions = {
   providers: [
     CredentialsProvider({

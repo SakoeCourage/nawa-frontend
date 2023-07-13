@@ -1,5 +1,4 @@
 import React from 'react'
-import InputTextFlat from '@/components/form/InputTextFlat'
 import Primarybutton from '@/components/form/Primarybutton'
 import InputTextStatus from '@/components/form/InputTextStatus'
 import Link from 'next/link'

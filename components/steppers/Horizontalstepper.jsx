@@ -1,13 +1,11 @@
 "use client"
 import React, { Component, useEffect, useMemo, useState } from 'react'
-
 function Horizontalstepper({ steps, onComplete, currentData }) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [formData, setFormData] = useState({ ...currentData })
   const Component = steps[currentIndex]?.component
   const Title = steps[currentIndex]?.title
   const Caption = steps[currentIndex]?.caption
-
   const isLastStep = useMemo(() => currentIndex + 1 === steps?.length, [currentIndex])
   const isFirstStep = useMemo(() => currentIndex + 1 === 1, [currentIndex])
 

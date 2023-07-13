@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import InputTextBordered from '@/components/form/InputTextBordered'
 

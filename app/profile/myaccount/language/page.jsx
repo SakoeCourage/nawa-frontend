@@ -25,9 +25,7 @@ function page() {
                     </p>
 
                     <nav className=' flex flex-col gap-10 mt-10'>
-
                         <Inputselect customSearchEnabled={true} placeholder="Preferred Language" data={[{ value: 'English', label: 'English' }, { value: 'French', label: 'French' }]} />
-                  
                     </nav>
                     <nav className=' my-6 flex items-center justify-end'>
                         <Primarybutton className='w-full' text='Save' />

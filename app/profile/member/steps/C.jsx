@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useState } from 'react'
 import Inputselect from '@/components/form/Inputselect'
 import InputTextFlat from '@/components/form/InputTextFlat'
