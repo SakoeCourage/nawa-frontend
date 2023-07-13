@@ -1,27 +1,190 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --headerHeight: 6rem;
+    --inputH: 45px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    @apply leading-5 text-[0.95rem]
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.section-hero {
+    background: url('../public/images/hero.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section.nawainscription {
+    background: url('../public/images/Rectangle 49.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#hero-category:hover #hero-category-name {
+    opacity: 100%;
+}
+
+.hidescroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hidescroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.servicecard:hover .image,.servicecard.active .image {
+    transform: scale(1.02);
+}
+
+.servicecard:hover .overlay,.servicecard.active .overlay {
+    @apply bg-black/10
+}
+
+.servicecard:hover .inscription,.servicecard.active .inscription {
+    @apply h-auto opacity-100
+}
+
+.scroll-track {
+    position: relative;
+    height: 8px;
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+.scroll-thumb {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#footerend {
+    position: relative;
+    z-index: 20;
+}
+
+#footerend::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    @apply inset-x-0 inset-y-[49%] bg-white/60
+}
+.strikebg{
+    position: relative;
+    z-index: 20;
+}
+
+.strikebg::before {
+    content: '';
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    @apply inset-x-0 inset-y-[49%] bg-[#CDCDCD]
+}
+.account-link-active{
+    position: relative;
+    @apply text-alternative-light-dark font-medium
+}
+.account-link-active::before{
+    content: '';
+    position: absolute;
+    @apply bottom-0 inset-x-[30%] bg-alternative-light-dark h-[1px] rounded-md 
+}
+
+
+.help-and-tips{
+    background: url("/images/tipsbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.select2{
+    height: var(--inputH) !important;
+    
+}
+.select2 .selection{
+    height: 100% !important; 
+    
+}
+.select2 .selection .select2-selection{
+    height: 100% !important;
+    display:  flex !important;
+    align-items: center; 
+}
+
+.select2 .selection .select2-selection span{
+    display: flex !important;
+    align-items: center;
+    height: 100% !important;
+}
+
+
+.loadingwheel {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.5px;
+    background-color: white;
+
+}
+
+ .loadingwheel:before {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+}
+
+ .loadingwheel .loadingBar {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #067b82;
+    animation: wheelbar 2s linear infinite;
+}
+
+@keyframes wheelbar {
+    0% {
+        left: 0%;
+        right: 100%;
+        width: 0%;
+    }
+
+    10% {
+        left: 0%;
+        right: 75%;
+        width: 25%;
+    }
+
+    90% {
+        right: 0%;
+        left: 75%;
+        width: 25%;
+    }
+
+    100% {
+        left: 100%;
+        right: 0%;
+        width: 0%;
+    }
+}
+
+
+.add-ts {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.4);
 }

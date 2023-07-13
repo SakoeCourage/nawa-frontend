@@ -1,0 +1,7 @@
+export * from './Aboutinscription.jsx'
+export * from './Browsecategories.jsx'
+export * from './Hero.jsx'
+export * from './Homerecentblogs.jsx'
+export * from './Homesupport.jsx'
+export * from './Popularservice.jsx'
+export * from './Featuredcategories.jsx'
