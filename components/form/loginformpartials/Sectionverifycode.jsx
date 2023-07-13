@@ -2,7 +2,6 @@
 import { useRouter } from 'next/navigation'
 import React, { useState, useEffect } from 'react'
 import { signIn } from 'next-auth/react'
-"use client"
 import { useSession } from 'next-auth/react'
 
 export default function Sectionverifycode({ formData, setCurrentComponent, handleOnSendOtp, setFormData, setProcessing }) {
