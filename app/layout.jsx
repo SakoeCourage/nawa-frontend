@@ -1,12 +1,9 @@
-'use client'
 import Footer from './footer'
 import './globals.css'
 import Header from './header'
-import { Suspense, useEffect } from 'react'
 import { SessionProvider } from 'next-auth/react'
-export const metadata = {
 
-}
+
 export default function RootLayout({ children, session }) {
 
   return (
