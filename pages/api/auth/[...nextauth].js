@@ -1,6 +1,7 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
 
+
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -60,10 +61,14 @@ export const authOptions = {
       }
       return token
     },
+    authorized({ req, token }) {
+      if (token) return true
+    }
 
   },
   pages: {
-    signIn: '/?login=true'
+    signIn: '/?login=true',
+    error: '/error',
   }
 };
 

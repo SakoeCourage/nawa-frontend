@@ -6,7 +6,6 @@ import getToken from "./getToken";
   const token = await getToken();
   if (token) {
     Api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-    console.log(token);
   }
 })();
 
