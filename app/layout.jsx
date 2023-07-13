@@ -1,8 +1,8 @@
+"use client"
 import Footer from './footer'
 import './globals.css'
 import Header from './header'
 import { SessionProvider } from 'next-auth/react'
-
 
 export default function RootLayout({ children, session }) {
 
