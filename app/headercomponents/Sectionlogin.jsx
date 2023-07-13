@@ -1,18 +1,14 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Loginformwithmodal from '@/components/form/Loginformwithmodal'
-import { usePathname, useParams, useSearchParams, useRouter } from 'next/navigation'
-import { addOrUpdateUrlParam, removeURLParameter } from '../utils'
-import { signIn } from 'next-auth/react'
+import {  useSearchParams, useRouter } from 'next/navigation'
+import { addOrUpdateUrlParam } from '../utils'
 import { useSession } from 'next-auth/react'
 function Sectionlogin() {
     const { data: session, status } = useSession()
     const router = useRouter()
     const searchparams = useSearchParams()
     const login = searchparams.get('login')
-
-
-   
 
     return (
         <>

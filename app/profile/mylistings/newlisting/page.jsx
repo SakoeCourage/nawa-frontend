@@ -3,7 +3,6 @@ import React from 'react'
 import {A,B,C,D} from './steps'
 import { useRouter } from 'next/navigation'
 import Horizontalstepper from '@/components/steppers/Horizontalstepper'
-import { object, string, number, date } from 'yup';
 
 const steps = [
     {
