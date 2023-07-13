@@ -28,7 +28,7 @@ export const Imagepreviewer = ({ name = '', setimage = void (0), removable = tru
             setfileisvalid(true);
         }
         else {
-            // setfileisvalid(false);
+       
         }
     }
 
